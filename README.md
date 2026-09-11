@@ -19,4 +19,4 @@ This assignment covers two core areas of digital image processing:
 
 All implementations are done in Python using OpenCV, NumPy, and Matplotlib, with several
 algorithms (histogram equalization, bilateral filtering, image zooming) implemented
-from scratch rather than relying pure
+from scratch rather than relying purely on built-in library functions.
