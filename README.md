@@ -62,3 +62,20 @@ Computes the Sobel gradient of an image three different ways: (a) using
 (c) exploiting the separability of the Sobel kernel into a smoothing column vector
 `[1,2,1]ᵀ` and a differencing row vector `[1,0,−1]`. Verifies all three produce
 (numerically) identical results.
+
+
+and computing the normalized sum-of-squared-differences (SSD) against the original
+large images.
+
+### Q9 — GrabCut Segmentation and Background Blur
+Uses `cv2.grabCut` to segment a flower image into foreground and background, then
+composites a heavily Gaussian-blurred background with the sharp foreground to simulate
+a shallow depth-of-field (bokeh) effect. Discusses why a dark halo appears just beyond
+the flower's edge due to the hard segmentation mask.
+
+### Q10 — Bilateral Filtering: OpenCV vs. From-Scratch
+Applies `cv2.bilateralFilter` to smooth an image while preserving edges, compares it
+against a similarly-sized Gaussian blur, then implements a bilateral filter from
+scratch and quantitatively compares it (via normalized SSD) against OpenCV's built-in
+version.
+
